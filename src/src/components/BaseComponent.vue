@@ -1,5 +1,5 @@
 <template>
-    <div class="root">
+    <div class="root" @click="TestMethod">
         <div>data: {{sampleProp}}</div>
         <slot></slot>
         <slot name="test"></slot>
@@ -13,6 +13,11 @@ export default {
         return {
             sampleProp: 123
         };
+    },
+    methods: {
+        TestMethod() {
+            alert("test method !!!");
+        }
     }
 }
 </script>
