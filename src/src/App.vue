@@ -14,12 +14,13 @@
 <script>
 import HOC from "./hoc";
 import BaseComponent from "./components/BaseComponent.vue";
+var EnhancedComponent = HOC(BaseComponent);
 
 export default {
   name: "App",
   components: {
     BaseComponent,
-    EnhancedComponent: HOC(BaseComponent)
+    EnhancedComponent
   }
 };
 </script>
